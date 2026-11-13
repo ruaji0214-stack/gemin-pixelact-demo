@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', 'Noto Serif SC', serif;
+    --font-sans: 'Noto Sans SC', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #060812;
+    color: #e8ecf8;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-gothic {
+  font-family: var(--font-display);
+}
+
+.pixel-canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.hd-pixel-canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.hud-stroke {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px #070912;
+  text-shadow: 0 2px 6px rgba(4, 6, 14, 0.9);
+}
+
+.hud-stroke-sm {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 2px #070912;
+  text-shadow: 0 1px 4px rgba(4, 6, 14, 0.85);
+}
+
+/* Crisp pixel-stepped gothic grimoire frame (Bloodstained pixel-ornament border) */
+.pixel-gothic-frame {
+  background-color: rgba(9, 10, 22, 0.94);
+  box-shadow:
+    0 -2px 0 0 #a88754,
+    0 2px 0 0 #a88754,
+    -2px 0 0 0 #a88754,
+    2px 0 0 0 #a88754,
+    0 0 0 2px #261b2e,
+    0 -4px 0 0 #05060e,
+    0 4px 0 0 #05060e,
+    -4px 0 0 0 #05060e,
+    4px 0 0 0 #05060e,
+    0 18px 44px rgba(2, 3, 10, 0.92);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

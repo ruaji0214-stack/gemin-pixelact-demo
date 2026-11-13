@@ -1,0 +1,6 @@
+{
+  "name": "Silver Echo: PixelFX Action",
+  "description": "A fast-paced 2D side-scrolling pixel-art action game inspired by PixelFX, featuring a silver-haired anime swordswoman, dual-buffer pixel VFX, stylish combos, and precision phantom dodges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
